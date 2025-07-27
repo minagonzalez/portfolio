@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Linkedin, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -9,15 +9,6 @@ export default function Footer() {
             © {new Date().getFullYear()} Mina. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground"
-              aria-label="GitHub"
-            >
-              <Github className="h-5 w-5" />
-            </a>
             <a
               href="https://www.linkedin.com/in/minagonzalezcortines"
               target="_blank"

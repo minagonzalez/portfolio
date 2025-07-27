@@ -5,20 +5,19 @@ import { Badge } from "@/components/ui/badge"
 
 export default function AboutPage() {
   const skills = [
-    "React",
-    "TypeScript",
+    "WordPress",
+    "PHP",
     "JavaScript",
     "HTML",
     "CSS",
-    "Node.js",
-    "Express",
-    "Next.js",
+    "SCSS",
     "Tailwind CSS",
     "Git",
     "RESTful APIs",
-    "GraphQL",
-    "MongoDB",
-    "PostgreSQL",
+    "MySQL",
+    "React",
+    "TypeScript",
+    "Next.js"
   ]
 
   return (
@@ -28,18 +27,13 @@ export default function AboutPage() {
       <div className="grid gap-12 md:grid-cols-2">
         <div>
           <p className="text-lg text-muted-foreground">
-            Hello! I'm Mina, a passionate web developer with a keen eye for design and a love for creating seamless user
-            experiences. With several years of experience in the field, I've had the opportunity to work on a variety of
-            projects that have helped me grow both technically and creatively.
+            Hello! I'm Mina, and as a front-end developer with over five years of experience, I specialize in building custom solutions using WordPress, including theme and plugin development. In my current role at Cardinal Digital Marketing, I contribute to the design and development of optimized websites, combining skills in HTML, SCSS, Tailwind, JavaScript, and PHP to deliver both functional and visually appealing results.
           </p>
           <p className="mt-4 text-lg text-muted-foreground">
-            My journey in web development began when I discovered my passion for bringing ideas to life through code.
-            Since then, I've been constantly learning and adapting to new technologies and methodologies to stay at the
-            forefront of this ever-evolving industry.
+            My goal is to integrate modern technologies like React and TypeScript to strengthen our frontend solutions and enhance user experience. Passionate about teamwork and continuous improvement, I strive to add value through effective collaboration and the implementation of efficient development practices.
           </p>
           <p className="mt-4 text-lg text-muted-foreground">
-            When I'm not coding, you can find me exploring new hiking trails, experimenting with new recipes in the
-            kitchen, or diving into a good book.
+            When I'm not coding, I'm probably on the padel court, hanging out with my two cats and three dogs, or enjoying a good football match.
           </p>
         </div>
 
@@ -53,21 +47,21 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <h2 className="mb-4 mt-8 text-2xl font-bold">Education</h2>
+          <h2 className="mb-4 mt-8 text-2xl font-bold">Actual Job</h2>
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold">Bachelor of Science in Computer Science</h3>
-              <p className="text-muted-foreground">University of Technology</p>
-              <p className="text-sm text-muted-foreground">2016 - 2020</p>
+              <h3 className="text-xl font-semibold">Front-End Developer | WordPress Specialist</h3>
+              <p className="text-muted-foreground">Cardinal Digital Marketing</p>
+              <p className="text-sm text-muted-foreground">June 2023 - Present</p>
             </CardContent>
           </Card>
 
-          <h2 className="mb-4 mt-8 text-2xl font-bold">Experience</h2>
+          <h2 className="mb-4 mt-8 text-2xl font-bold">Last Job</h2>
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold">Senior Frontend Developer</h3>
-              <p className="text-muted-foreground">Tech Innovations Inc.</p>
-              <p className="text-sm text-muted-foreground">2020 - Present</p>
+              <h3 className="text-xl font-semibold">Programming Teacher - HTML, CSS & JavaScript</h3>
+              <p className="text-muted-foreground">Digital House & Coderhouse.</p>
+              <p className="text-sm text-muted-foreground">2022 - 2023</p>
             </CardContent>
           </Card>
         </div>

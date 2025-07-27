@@ -12,8 +12,7 @@ export default function HomePage() {
           Hi, I'm <span className="text-primary">Mina</span>
         </h1>
         <p className="mt-6 max-w-3xl text-xl text-muted-foreground">
-          I'm a passionate developer specializing in creating beautiful, functional, and user-friendly websites and
-          applications.
+         I'm a frontend developer who turns real-world problems into clean, efficient websites—code first, no fluff.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Button asChild size="lg">

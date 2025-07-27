@@ -45,8 +45,7 @@ export default function ContactPage() {
     <div className="container py-12 md:py-24">
       <h1 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Get In Touch</h1>
       <p className="mb-12 max-w-3xl text-lg text-muted-foreground">
-        Have a question or want to work together? Feel free to reach out to me using the form below or through my
-        contact information.
+        Have a question or want to work together? Feel free to reach out to me using the form below or through my contact information.
       </p>
 
       <div className="grid gap-8 md:grid-cols-3">
@@ -59,7 +58,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-sm text-muted-foreground">contact@example.com</p>
+                  <p className="text-sm text-muted-foreground">dev.minagonzalez@gmail.com</p>
                 </div>
               </CardContent>
             </Card>
@@ -71,7 +70,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-sm text-muted-foreground">(123) 456-7890</p>
+                  <p className="text-sm text-muted-foreground">(+54) 9 11 5996 9989</p>
                 </div>
               </CardContent>
             </Card>
@@ -83,7 +82,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-medium">Location</h3>
-                  <p className="text-sm text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-sm text-muted-foreground">Mendoza, Argentina</p>
                 </div>
               </CardContent>
             </Card>
