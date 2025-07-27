@@ -1,6 +1,6 @@
 "use client"
 
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
@@ -18,42 +18,56 @@ export default function ProjectsPage() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-commerce Platform",
+      title: "WordPress Development + API Automation",
       description:
-        "A full-featured e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product search, cart functionality, and payment processing.",
-      tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      image: "/placeholder.svg?height=300&width=500",
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+        "A dynamic WordPress integration where a custom plugin creates CPTs based on external API data. Each response is stored in the database and displayed on the frontend without manual intervention. Built for scalability and maintainability.",
+      tags: ["API Integration", "PHP", "WordPress", "SCSS", "JavasScript"],
+      image: "/pt-solutions.jpeg?height=300&width=500",
+      liveUrl: "https://ptsolutions.com/",
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Advanced Filtering & CPT Architecture",
       description:
-        "A productivity app that helps users organize tasks, set priorities, and track progress. Built with React and Firebase for real-time updates.",
-      tags: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
-      image: "/placeholder.svg?height=300&width=500",
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+        "A custom WordPress setup featuring multiple interrelated CPTs and dynamic filtering capabilities. Users can filter content by location and provider, with relationships powering the front-end display. Built for scalability and user-friendly content management.",
+      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
+      image: "/hello-hospcotch.jpeg?height=300&width=500",
+      liveUrl: "https://hellohopscotch.com/",
     },
     {
       id: 3,
-      title: "Weather Dashboard",
+      title: "Custom WordPress Theme & CPTs",
       description:
-        "A weather application that provides current conditions and forecasts for locations worldwide. Utilizes the OpenWeather API and features a responsive design.",
-      tags: ["React", "API Integration", "CSS", "JavaScript"],
-      image: "/placeholder.svg?height=300&width=500",
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+        "A fully custom WordPress theme designed with meticulous attention to detail and mobile-first responsiveness. Includes multiple CPTs with defined relationships to structure complex content and enhance user experience.",
+      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
+      image: "/clarus-care.jpeg?height=300&width=500",
+      liveUrl: "https://claruscare.com/",
     },
     {
       id: 4,
+      title: "Hierarchical CPT Framework",
+      description:
+        "Custom WordPress theme built around a hierarchical CPT structure with parent-child relationships. Content is automatically populated across the site based on these connections, enabling dynamic rendering without manual updates.",
+      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
+      image: "/pelvic-rehab.jpeg?height=300&width=500",
+      liveUrl: "https://pelvicrehabilitation.com/",
+    },
+    {
+      id: 5,
+      title: "Custom UI & Gutenberg Blocks",
+      description:
+        "A modern interface redesign paired with custom-built Gutenberg blocks to enhance content flexibility and editorial control. Each block was handcrafted to match the design system and improve user experience in the WordPress editor.",
+      tags: ["React", "Gutenberg", "WordPress", "JavaScript", "PHP"],
+      image: "/eleanor-health.jpeg?height=300&width=500",
+      liveUrl: "https://eleanorhealth.com/",
+    },
+    {
+      id: 6,
       title: "Portfolio Website",
       description:
         "A personal portfolio website showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS.",
       tags: ["React", "TypeScript", "Tailwind CSS", "React Router"],
-      image: "/placeholder.svg?height=300&width=500",
-      githubUrl: "https://github.com",
+      image: "/portfolio.jpeg?height=300&width=500",
     },
   ]
 
@@ -61,8 +75,7 @@ export default function ProjectsPage() {
     <div className="container py-12 md:py-24">
       <h1 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">My Projects</h1>
       <p className="mb-12 max-w-3xl text-lg text-muted-foreground">
-        Here are some of the projects I've worked on. Each project represents a unique challenge and learning
-        experience.
+        Here are some of the projects I've worked on. Each project represents a unique challenge and learning experience.
       </p>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
@@ -97,14 +110,6 @@ export default function ProjectsPage() {
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                     Live Demo
                     <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-              )}
-              {project.githubUrl && (
-                <Button asChild variant="outline" size="sm">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    Code
-                    <Github className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               )}

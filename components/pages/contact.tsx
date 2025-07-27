@@ -26,20 +26,40 @@ export default function ContactPage() {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault()
+  setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+  try {
+    const formDataEncoded = new URLSearchParams()
+    formDataEncoded.append("name", formData.name)
+    formDataEncoded.append("email", formData.email)
+    formDataEncoded.append("subject", formData.subject)
+    formDataEncoded.append("message", formData.message)
+    formDataEncoded.append("_captcha", "false") // opcional: sin captcha
 
-    // Reset form and show success message
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    setIsSubmitting(false)
-    setSubmitSuccess(true)
+    const response = await fetch("https://formsubmit.co/dev.minagonzalez@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formDataEncoded.toString(),
+    })
 
-    // Hide success message after 5 seconds
-    setTimeout(() => setSubmitSuccess(false), 5000)
+    if (response.ok) {
+      setFormData({ name: "", email: "", subject: "", message: "" })
+      setSubmitSuccess(true)
+      setTimeout(() => setSubmitSuccess(false), 5000)
+    } else {
+      console.error("Error al enviar el formulario")
+    }
+  } catch (error) {
+    console.error("Error en el envío:", error)
   }
+
+  setIsSubmitting(false)
+}
+
+
 
   return (
     <div className="container py-12 md:py-24">
