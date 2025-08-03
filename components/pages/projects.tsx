@@ -36,12 +36,12 @@ export default function ProjectsPage() {
     },
     {
       id: 3,
-      title: "Custom WordPress Theme & CPTs",
+      title: "React Weather App",
       description:
-        "A fully custom WordPress theme designed with meticulous attention to detail and mobile-first responsiveness. Includes multiple CPTs with defined relationships to structure complex content and enhance user experience.",
-      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
-      image: "/clarus-care.jpeg?height=300&width=500",
-      liveUrl: "https://claruscare.com/",
+        "A real-time weather application with animated backgrounds and geolocation features. Built with React, Vite, and Tailwind CSS, integrated with OpenWeatherMap API.",
+      tags: ["React", "JavaScript", "Tailwind", "Vite", "Geolocation API", "OpenWeatherMap API"],
+      image: "/weather-app.jpeg?height=300&width=500",
+      liveUrl: "https://react-weather-app-ten-tau.vercel.app/",
     },
     {
       id: 4,
@@ -63,12 +63,12 @@ export default function ProjectsPage() {
     },
     {
       id: 6,
-      title: "React Weather App",
+      title: "Custom WordPress Theme & CPTs",
       description:
-        "A real-time weather application with animated backgrounds and geolocation features. Built with React, Vite, and Tailwind CSS, integrated with OpenWeatherMap API.",
-      tags: ["React", "JavaScript", "Tailwind", "Vite", "Geolocation API", "OpenWeatherMap API"],
-      image: "/weather-app.jpeg?height=300&width=500",
-      liveUrl: "https://react-weather-app-ten-tau.vercel.app/",
+        "A fully custom WordPress theme designed with meticulous attention to detail and mobile-first responsiveness. Includes multiple CPTs with defined relationships to structure complex content and enhance user experience.",
+      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
+      image: "/clarus-care.jpeg?height=300&width=500",
+      liveUrl: "https://claruscare.com/",
     },
     {
       id: 7,
