@@ -66,7 +66,7 @@ export default function ProjectsPage() {
       title: "React Weather App",
       description:
         "A real-time weather application with animated backgrounds and geolocation features. Built with React, Vite, and Tailwind CSS, integrated with OpenWeatherMap API.",
-      tags: ["React", "JavaScript", "Tailwind", "Weather API", "Vite", "Geolocation API", "OpenWeatherMap API"],
+      tags: ["React", "JavaScript", "Tailwind", "Vite", "Geolocation API", "OpenWeatherMap API"],
       image: "/weather-app.jpeg?height=300&width=500",
       liveUrl: "https://react-weather-app-ten-tau.vercel.app/",
     },
