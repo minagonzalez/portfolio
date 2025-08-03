@@ -63,6 +63,15 @@ export default function ProjectsPage() {
     },
     {
       id: 6,
+      title: "React Weather App",
+      description:
+        "A real-time weather application with animated backgrounds and geolocation features. Built with React, Vite, and Tailwind CSS, integrated with OpenWeatherMap API.",
+      tags: ["React", "JavaScript", "Tailwind", "Weather API", "Vite", "Geolocation API", "OpenWeatherMap API"],
+      image: "/weather-app.jpeg?height=300&width=500",
+      liveUrl: "https://react-weather-app-ten-tau.vercel.app/",
+    },
+    {
+      id: 7,
       title: "Portfolio Website",
       description:
         "A personal portfolio website showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS.",
