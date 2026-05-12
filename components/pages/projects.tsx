@@ -18,24 +18,42 @@ export default function ProjectsPage() {
   const projects: Project[] = [
     {
       id: 1,
+      title: "Children's Hospital Website Redesign",
+      description:
+        "A custom WordPress build for a pediatric healthcare organization, focused on accessible content, clear service navigation, provider discovery, and appointment-driven user journeys across a large hospital site.",
+      tags: ["PHP", "WordPress", "SCSS", "JavaScript", "Accessibility"],
+      image: "/daytons.jpeg?height=300&width=500",
+      liveUrl: "https://childrensdayton.org/",
+    },
+    {
+      id: 2,
+      title: "Multi-Location Dental Platform",
+      description:
+        "A responsive WordPress website for a growing dental group, featuring location-based content, service pages, patient resources, and conversion-focused booking paths for users across multiple states.",
+      tags: ["PHP", "WordPress", "SCSS", "JavaScript", "Responsive Design"],
+      image: "/thesmilist.jpeg?height=300&width=500",
+      liveUrl: "https://thesmilist.com/",
+    },
+    {
+      id: 3,
       title: "WordPress Development + API Automation",
       description:
         "A dynamic WordPress integration where a custom plugin creates CPTs based on external API data. Each response is stored in the database and displayed on the frontend without manual intervention. Built for scalability and maintainability.",
-      tags: ["API Integration", "PHP", "WordPress", "SCSS", "JavasScript"],
+      tags: ["API Integration", "PHP", "WordPress", "SCSS", "JavaScript"],
       image: "/pt-solutions.jpeg?height=300&width=500",
       liveUrl: "https://ptsolutions.com/",
     },
     {
-      id: 2,
+      id: 4,
       title: "Advanced Filtering & CPT Architecture",
       description:
         "A custom WordPress setup featuring multiple interrelated CPTs and dynamic filtering capabilities. Users can filter content by location and provider, with relationships powering the front-end display. Built for scalability and user-friendly content management.",
-      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
+      tags: ["PHP", "WordPress", "SCSS", "JavaScript"],
       image: "/hello-hospcotch.jpeg?height=300&width=500",
       liveUrl: "https://hellohopscotch.com/",
     },
     {
-      id: 3,
+      id: 5,
       title: "React Weather App",
       description:
         "A real-time weather application with animated backgrounds and geolocation features. Built with React, Vite, and Tailwind CSS, integrated with OpenWeatherMap API.",
@@ -44,16 +62,16 @@ export default function ProjectsPage() {
       liveUrl: "https://react-weather-app-ten-tau.vercel.app/",
     },
     {
-      id: 4,
+      id: 6,
       title: "Hierarchical CPT Framework",
       description:
         "Custom WordPress theme built around a hierarchical CPT structure with parent-child relationships. Content is automatically populated across the site based on these connections, enabling dynamic rendering without manual updates.",
-      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
+      tags: ["PHP", "WordPress", "SCSS", "JavaScript"],
       image: "/pelvic-rehab.jpeg?height=300&width=500",
       liveUrl: "https://pelvicrehabilitation.com/",
     },
     {
-      id: 5,
+      id: 7,
       title: "Custom UI & Gutenberg Blocks",
       description:
         "A modern interface redesign paired with custom-built Gutenberg blocks to enhance content flexibility and editorial control. Each block was handcrafted to match the design system and improve user experience in the WordPress editor.",
@@ -62,16 +80,16 @@ export default function ProjectsPage() {
       liveUrl: "https://eleanorhealth.com/",
     },
     {
-      id: 6,
+      id: 8,
       title: "Custom WordPress Theme & CPTs",
       description:
         "A fully custom WordPress theme designed with meticulous attention to detail and mobile-first responsiveness. Includes multiple CPTs with defined relationships to structure complex content and enhance user experience.",
-      tags: ["PHP", "WordPress", "SCSS", "JavasScript"],
+      tags: ["PHP", "WordPress", "SCSS", "JavaScript"],
       image: "/clarus-care.jpeg?height=300&width=500",
       liveUrl: "https://claruscare.com/",
     },
     {
-      id: 7,
+      id: 9,
       title: "Portfolio Website",
       description:
         "A personal portfolio website showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS.",
@@ -129,4 +147,3 @@ export default function ProjectsPage() {
     </div>
   )
 }
-
